@@ -69,7 +69,7 @@ public class ProductServiceImpl implements ProductService{
         Category categoryEntity = categoryRepository.findById(id).orElse(null);
 
         if (categoryEntity != null) {
-            return productRepository.findProductByCategory(categoryEntity);
+            return null; //productRepository.findProductByCategory(categoryEntity);
         } else {
             return null;
         }

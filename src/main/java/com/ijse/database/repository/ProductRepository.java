@@ -14,7 +14,7 @@ import com.ijse.database.entity.Product;
 public interface ProductRepository extends JpaRepository<Product, Long> {
     
     //Custom Query to get products by category
-    @Query("SELECT p FROM Product p WHERE p.category = :category")
-    List<Product> findProductByCategory(@Param("category") Category category);
+    // @Query("SELECT p FROM Product p WHERE p.category = :category")
+    // List<Product> findProductByCategory(@Param("category") Category category);
     
 }

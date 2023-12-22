@@ -16,7 +16,7 @@ import lombok.Setter;
 
 @Setter
 @Getter
-@Entity(name = "category")
+@Entity
 public class Category {
     
     @Id
@@ -27,5 +27,5 @@ public class Category {
     
     @JsonIgnore
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "catagory", cascade = CascadeType.ALL)
-    private List<Product> product;
+    private List<Product> products;
 }
